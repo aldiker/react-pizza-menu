@@ -8,7 +8,9 @@ function Footer() {
     console.log(isOpen)
 
     return (
-        <footer>{new Date().toLocaleTimeString}. We're currentlt open</footer>
+        <footer className='footer'>
+            {new Date().toLocaleTimeString}. We're currentlt open
+        </footer>
     )
 }
 

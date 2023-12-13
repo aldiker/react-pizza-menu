@@ -2,10 +2,13 @@ function Pizza(props) {
     const { pizza } = props
 
     return (
-        <div>
+        <div className='pizza'>
             <img src={pizza.photoName} alt='{pizza.name}' />
-            <h1>{pizza.name}</h1>
-            <p>{pizza.ingredients}</p>
+            <div>
+                <h3>{pizza.name}</h3>
+                <p>{pizza.ingredients}</p>
+                <span>{pizza.price}</span>
+            </div>
         </div>
     )
 }
