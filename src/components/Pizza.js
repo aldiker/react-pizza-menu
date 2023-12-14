@@ -1,6 +1,8 @@
 function Pizza(props) {
     const { pizza } = props
 
+    if (pizza.soldOut) return null
+
     return (
         <li className='pizza'>
             <img src={pizza.photoName} alt='{pizza.name}' />
