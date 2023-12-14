@@ -7,11 +7,10 @@ function Footer() {
     const isOpen = hour >= openHour && hour <= closeHour
     console.log(isOpen)
 
-    return (
-        <footer className='footer'>
-            {new Date().toLocaleTimeString}. We're currentlt open
-        </footer>
-    )
+    const realTime = new Date().toLocaleTimeString('uk-UA')
+    console.log(realTime)
+
+    return <footer className='footer'>{realTime}. We're currentlt open</footer>
 }
 
 export default Footer

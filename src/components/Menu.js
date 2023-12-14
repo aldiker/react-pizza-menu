@@ -2,15 +2,14 @@ import pizzaData from '../data/data'
 import Pizza from './Pizza'
 
 function Menu() {
-    // const pizza = pizzaData[0]
-
     return (
         <main className='menu'>
             <h2>Our menu</h2>
-            {/* <Pizza pizza={pizza} /> */}
-            {pizzaData.map((pizza) => (
-                <Pizza pizza={pizza} />
-            ))}
+            <ul className='pizzas'>
+                {pizzaData.map((pizza, index) => (
+                    <Pizza pizza={pizza} key={index} />
+                ))}
+            </ul>
         </main>
     )
 }
